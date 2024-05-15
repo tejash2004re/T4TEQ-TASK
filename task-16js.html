@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="green"> 
+    
+    <style>
+        .a1{
+            
+            font-size: 50px;
+            text-align: center;
+           button{
+            width: 100px;
+            height: 50px;
+            box-shadow: 3px 3px 3px 3px black;
+            
+            
+            }
+            button:hover{
+                transition: .4s;
+                background-color: rgb(81, 88, 88);
+
+        }
+            input{
+                text-align: center;
+                width: 500px;
+                height: 40px;
+                font-size: 20px;
+                font-weight: 600;
+                color: rgb(34, 65, 3);
+                 
+            }
+        }
+        p{
+            text-align: center;
+            font-size: 100px;
+
+
+        }
+    </style>
+    <div class="a1">
+    <h1>Enter a number to find leap year ??</h1>
+    <input type="text" id="he"><br>
+    <button onclick="hello()" >submite</button></div>
+    <p id="p1"></p>
+    
+    
+    
+    <script>
+        function hello(){
+            var a=document.getElementById("he").value
+            var p=document.getElementById("p1")
+            if((a%4==0)&& (a%100!=0)||(a%400==0)){
+            
+                p.innerHTML="leap year"
+
+            }
+            else{
+                p.innerHTML="not"
+            }
+        }
+   </script>
+</body>
+</html>
+</body>
+</html>
